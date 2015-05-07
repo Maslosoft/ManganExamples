@@ -12,7 +12,7 @@
     ],
 	"autoload": {
 		"psr-4": {
-			"Maslosoft\ManganExamples\": "src"
+			"Maslosoft\\ManganExamples\\": "src"
 		}
 	},
     "minimum-stability": "dev",
