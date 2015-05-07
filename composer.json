@@ -10,6 +10,11 @@
             "email": "pmaselkowski@gmail.com"
         }
     ],
+	"autoload": {
+		"psr-4": {
+			"Maslosoft\ManganExamples\": "src"
+		}
+	},
     "minimum-stability": "dev",
     "require": {}
 }
