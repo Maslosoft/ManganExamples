@@ -1,0 +1,15 @@
+{
+    "name": "maslosoft/mangan-examples",
+    "description": "Examples for Mangan project",
+    "require-dev": {
+        "maslosoft/hedron": "*"
+    },
+    "authors": [
+        {
+            "name": "Peter Maselkowski",
+            "email": "pmaselkowski@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
