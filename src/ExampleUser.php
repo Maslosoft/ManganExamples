@@ -19,10 +19,49 @@ use Maslosoft\Mangan\Document;
 class ExampleUser extends Document
 {
 
+	/**
+	 * @Label('First name')
+	 * @var string
+	 */
 	public $firstName = '';
+
+	/**
+	 * @Label('Last name')
+	 * @var string
+	 */
 	public $lastName = '';
+
+	/**
+	 * @Label('E-mail')
+	 * @var string
+	 */
 	public $email = '';
+
+	/**
+	 * @Label('Account activated')
+	 * @Renderer('Bool')
+	 * @var string
+	 */
 	public $active = false;
+
+	public function load()
+	{
+		// Load if not items
+		if ($this->count() == 0)
+		{
+			$this->reset();
+		}
+
+		// Find any model
+		$model = $this->find();
+		$time = $model->_id->getTimestamp() + (24 * 60 * 60);
+
+		// Reset each day
+		if (time() > $time)
+		{
+			$this->reset();
+		}
+	}
 
 	public function reset()
 	{
@@ -37,6 +76,7 @@ class ExampleUser extends Document
 			$model->lastName = $faker->lastName;
 			$model->email = $faker->email;
 			$model->active = $faker->boolean();
+			$model->save();
 		}
 	}
 
