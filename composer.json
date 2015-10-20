@@ -17,7 +17,7 @@
 	},
     "minimum-stability": "stable",
     "require": {
-        "fzaninotto/faker": "^1.6@dev",
+        "fzaninotto/faker": "~1",
         "maslosoft/mangan": "*"
     }
 }
