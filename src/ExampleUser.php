@@ -61,6 +61,7 @@ class ExampleUser extends Document
 		{
 			$this->reset();
 		}
+		return $this;
 	}
 
 	public function reset()
@@ -78,6 +79,7 @@ class ExampleUser extends Document
 			$model->active = $faker->boolean();
 			$model->save();
 		}
+		return $this;
 	}
 
 }
