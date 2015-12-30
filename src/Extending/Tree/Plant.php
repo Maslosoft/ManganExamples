@@ -23,6 +23,7 @@ class Plant implements AnnotatedInterface
 	use \Maslosoft\Mangan\Traits\I18NAbleTrait,
 	  \Maslosoft\Mangan\Traits\FinderTrait,
 	  \Maslosoft\Mangan\Traits\EntityManagerTrait,
+	  \Maslosoft\Mangan\Traits\OwneredTrait,
 	  \Maslosoft\Mangan\Traits\Model\SimpleTreeTrait;
 
 	/**
