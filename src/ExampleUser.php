@@ -70,7 +70,7 @@ class ExampleUser extends Document
 
 		$this->deleteAll();
 
-		for ($i = 0; $i < 10; $i++)
+		for ($i = 0; $i < 100; $i++)
 		{
 			$model = new ExampleUser();
 			$model->firstName = $faker->firstName;

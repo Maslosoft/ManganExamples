@@ -10,6 +10,7 @@ namespace Maslosoft\ManganExamples\Extending\International;
 
 use Maslosoft\Addendum\Interfaces\AnnotatedInterface;
 use Maslosoft\Mangan\Sanitizers\MongoObjectId;
+use Maslosoft\Mangan\Traits\I18NAbleTrait;
 use MongoId;
 
 /**
@@ -20,7 +21,7 @@ use MongoId;
 class Plant implements AnnotatedInterface
 {
 
-	use \Maslosoft\Mangan\Traits\I18NAbleTrait;
+	use I18NAbleTrait;
 
 	/**
 	 * @Sanitizer(MongoObjectId)

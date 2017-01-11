@@ -10,6 +10,9 @@ namespace Maslosoft\ManganExamples\Extending\EntityManager;
 
 use Maslosoft\Addendum\Interfaces\AnnotatedInterface;
 use Maslosoft\Mangan\Sanitizers\MongoObjectId;
+use Maslosoft\Mangan\Traits\EntityManagerTrait;
+use Maslosoft\Mangan\Traits\FinderTrait;
+use Maslosoft\Mangan\Traits\I18NAbleTrait;
 use MongoId;
 
 /**
@@ -20,9 +23,9 @@ use MongoId;
 class Plant implements AnnotatedInterface
 {
 
-	use \Maslosoft\Mangan\Traits\I18NAbleTrait,
-	  \Maslosoft\Mangan\Traits\FinderTrait,
-	  \Maslosoft\Mangan\Traits\EntityManagerTrait;
+	use I18NAbleTrait,
+	  FinderTrait,
+	  EntityManagerTrait;
 
 	/**
 	 * @Sanitizer(MongoObjectId)
