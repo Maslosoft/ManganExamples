@@ -56,5 +56,5 @@ class @Maslosoft.ManganExamples.ExampleUser_Base extends @Maslosoft.Components.M
 	# 
 	# @var string
 	#
-	_class: 'Maslosoft\\ManganExamples\\ExampleUser'
+	_class: 'Maslosoft\x5CManganExamples\x5CExampleUser'
 
