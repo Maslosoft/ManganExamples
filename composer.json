@@ -18,6 +18,6 @@
 	},
     "minimum-stability": "stable",
     "require": {
-        "fzaninotto/faker": "~1"
+        "maslosoft/faker": "^1"
     }
 }
